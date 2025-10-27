@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="berat_badan"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-13 10:48:18 AM"/>
+        <attribute name="created" value="QVNVUztDSElLQTsyMDI1LTEwLTEzOzEwOjAxOjEzIEFNOzE5MTc="/>
+        <attribute name="edited" value="QVNVUztDSElLQTsyMDI1LTEwLTEzOzEwOjQ4OjE4IEFNOzE7MjA0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="berat" type="Integer" array="False" size=""/>
+            <declare name="bmi, tinggi" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan nilai berat (kg):&quot;" newline="True"/>
+            <input variable="berat"/>
+            <output expression="&quot;Masukkan nilai tinggi (m):&quot;" newline="True"/>
+            <input variable="tinggi"/>
+            <assign variable="bmi" expression="berat / ( tinggi * tinggi )"/>
+            <if expression="bmi &lt; 18.5">
+                <then>
+                    <output expression="&quot;Nilai BMI-mu adalah &quot; &amp; bmi &amp; &quot;, dan kamu termasuk kategori: kurus&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="bmi &lt; 25">
+                        <then>
+                            <output expression="&quot;Nilai BMI-mu adalah &quot; &amp; bmi &amp; &quot;, dan kamu termasuk kategori: normal&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="bmi &lt; 30">
+                                <then>
+                                    <output expression="&quot;Nilai BMI-mu adalah &quot; &amp; bmi &amp; &quot;, dan kamu termasuk kategori: kelebihan berat badan&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Nilai BMI-mu adalah &quot; &amp; bmi &amp; &quot;, dan kamu termasuk kategori: kegemukan&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

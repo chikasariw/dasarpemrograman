@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="deret_penjumlahan"/>
+        <attribute name="authors" value="MATEMATIKA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-13 11.04.48 AM"/>
+        <attribute name="created" value="TUFURU1BVElLQTtERVNLVE9QLUdPR1A2M1M7MjAyNS0xMC0xMzsxMC4yMS4wNyBBTTszMDM2"/>
+        <attribute name="edited" value="TUFURU1BVElLQTtERVNLVE9QLUdPR1A2M1M7MjAyNS0xMC0xMzsxMS4wNC40OCBBTTsxOzMxNTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s, n, i, suku" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=n">
+                <assign variable="suku" expression="i/(i+1)"/>
+                <assign variable="s" expression="s+suku"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;hasil penjumlahan deret: &quot; &amp; s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="pertemuan3_2"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-06 10:19:51 AM"/>
+        <attribute name="created" value="QVNVUztDSElLQTsyMDI1LTEwLTA2OzEwOjE2OjA3IEFNOzE5Mjg="/>
+        <attribute name="edited" value="QVNVUztDSElLQTsyMDI1LTEwLTA2OzEwOjE5OjUxIEFNOzE7MjAzOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="14"/>
+            <do expression="i &gt;= -2">
+                <output expression="i" newline="True"/>
+                <assign variable="i" expression="i - 2"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

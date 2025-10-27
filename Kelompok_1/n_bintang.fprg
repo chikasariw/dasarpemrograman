@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="N Bintang"/>
+        <attribute name="authors" value="LENOVO X13"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-13 10:33:10 AM"/>
+        <attribute name="created" value="TEVOT1ZPIFgxMztERVNLVE9QLUpPOUZVTEw7MjAyNS0xMC0xMzsxMDoyNDoxMyBBTTszMDQx"/>
+        <attribute name="edited" value="TEVOT1ZPIFgxMztERVNLVE9QLUpPOUZVTEw7MjAyNS0xMC0xMzsxMDozMzoxMCBBTTsxOzMxNDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, i, j" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan jumlah baris (N)&quot;" newline="True"/>
+            <input variable="N"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <for variable="j" start="1" end="i" direction="inc" step="1">
+                    <output expression="&quot;*&quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

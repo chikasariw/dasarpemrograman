@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="loopingrepeatuntil"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-06 10:15:57 AM"/>
+        <attribute name="created" value="QVNVUztDSElLQTsyMDI1LTEwLTA2OzEwOjA4OjIwIEFNOzE5MjQ="/>
+        <attribute name="edited" value="QVNVUztDSElLQTsyMDI1LTEwLTA2OzEwOjE1OjU3IEFNOzE7MjA0MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <do expression="i &lt;= 10">
+                <output expression="&quot;test&quot;" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

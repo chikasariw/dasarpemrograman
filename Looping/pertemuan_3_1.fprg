@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="pertemuan_3_1"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-22 10:18:43 AM"/>
+        <attribute name="created" value="QVNVUztDSElLQTsyMDI1LTA5LTIyOzA5OjQ2OjQwIEFNOzE5NDI="/>
+        <attribute name="edited" value="QVNVUztDSElLQTsyMDI1LTA5LTIyOzEwOjE4OjQzIEFNOzE7MjA0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, total" type="Integer" array="False" size=""/>
+            <assign variable="total" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <input variable="n"/>
+            <while expression="i &lt;= n">
+                <assign variable="total" expression="total + i"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
